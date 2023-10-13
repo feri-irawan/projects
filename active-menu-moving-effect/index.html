@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Active Menu with Moving Effect by Feri Irawan</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <style>
+      .overlay {
+        border-radius: 0.5rem;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="sticky top-0 inset-x-0 bg-teal-100 p-4"
+      data-indicator=".overlay"
+      data-indicator-item="button"
+    >
+      <div class="flex justify-center gap-2">
+        <button class="rounded-lg px-2">Home</button>
+        <button class="rounded-lg px-2">About</button>
+        <button class="rounded-lg px-2">Projects</button>
+        <button class="rounded-lg px-2">Contact</button>
+      </div>
+      <div class="overlay bg-teal-200"></div>
+    </header>
+
+    <nav
+      data-indicator=".overlay"
+      class="p-4 whitespace-nowrap"
+      data-indicator-item="button"
+    >
+      <div
+        class="flex flex-wrap justify-center gap-2 p-1.5 border rounded-xl max-w-max mx-auto"
+      >
+        <button class="rounded-lg p-2">Home</button>
+        <button class="rounded-lg p-2">About</button>
+        <button class="rounded-lg p-2">Gallery</button>
+        <button class="rounded-lg p-2">Testimonials</button>
+        <button class="rounded-lg p-2">Pricing</button>
+        <button class="rounded-lg p-2">Contact</button>
+      </div>
+      <div class="overlay bg-teal-200"></div>
+    </nav>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
